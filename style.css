@@ -92,7 +92,6 @@ hr {
     max-width: 600px;
     width: 100%;
     background: linear-gradient(270deg, #FFFFFF 13%, rgba(227, 227, 227, 0.510417) 48.95%, rgba(227, 227, 227, 0.510417) 48.96%, #FFFFFF 82.67%);
-    /* background: red; */
 }
 
 .main-table-footer {
@@ -107,7 +106,6 @@ hr {
 .two-column {
     text-align: center;
     font-size: 14px;
-    /* padding: 5px 0 10px 0; */
 }
 
 .two-column .section {
@@ -144,7 +142,6 @@ hr {
 
 .content {
     width: 100%;
-    /* padding-top: 20px; */
 }
 
 .center {
