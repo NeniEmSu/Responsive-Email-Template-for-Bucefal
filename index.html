@@ -282,6 +282,8 @@
 
         }
 
+
+
         .body-text {
             min-height: 380px;
         }
@@ -295,56 +297,36 @@
             color: #239A0F;
         }
 
-        .footer-btn {
-            width: 193px;
-            height: 52px;
+        a.footer-btn {
+            display: inline-flex;
             padding: 9px 17px;
             margin: auto;
-
             background: #E3E3E3;
             border-radius: 10px;
             text-align: center;
             outline: none;
             border: 0;
             cursor: pointer;
-
-
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             text-align: center;
-
             color: #000000;
+            transition: 500ms all ease-in;
+            -webkit-transition: 500ms all ease-in;
+            -moz-transition: 500ms all ease-in;
+            -ms-transition: 500ms all ease-in;
+            -o-transition: 500ms all ease-in;
         }
 
-
-        @media screen and (max-width: 400px) {
-
-            .h1 {
-                font-size: 22px;
-            }
-
-            .two-column .column {
-                max-width: 100% !important;
-            }
-
-            .two-column img {
-                width: 100% !important;
-            }
-
-            .contact p {
-                display: inline-block;
-            }
-
-
-        }
-
-        @media screen and (min-width: 401px) and (max-width: 400px) {
-
-            .two-column .column {
-                max-width: 50% !important;
-            }
+        a.footer-btn:hover {
+            transform: scale(1.07);
+            -webkit-transform: scale(1.07);
+            -moz-transform: scale(1.07);
+            -ms-transform: scale(1.07);
+            -o-transform: scale(1.07);
+            background: rgb(226, 226, 226);
         }
 
         @media screen and (max-width:768px) {
@@ -379,6 +361,10 @@
                 max-width: 26px !important;
             }
 
+            .icon {
+                max-width: 26px !important;
+            }
+
             .two-column .section {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -402,6 +388,44 @@
                 padding-top: 0px !important;
             }
         }
+
+
+        @media screen and (min-width: 401px) and (max-width: 400px) {
+
+            .two-column .column {
+                max-width: 50% !important;
+            }
+        }
+
+
+        @media screen and (max-width: 400px) {
+
+            .h1 {
+                font-size: 22px;
+            }
+
+            .first-icon {
+                padding: 5px 0px 0 !important;
+                margin: auto;
+            }
+
+            .two-column .column {
+                max-width: 100% !important;
+            }
+
+            .two-column img {
+                width: 100% !important;
+            }
+
+            .contact p {
+                display: inline-block;
+            }
+
+            .footer-text {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 
@@ -420,31 +444,27 @@
                                     <tr>
                                         <td class="inner-td">
                                             <table class="content">
-                                                <tr class="has-gradient">
+                                                <tr>
                                                     <td align="center">
-                                                        <img src="bucefal3.png" alt="bucefal" title="Bucefal"
+                                                        <img src="bucefal3.png" alt="Bucefal Logo " title="Bucefal Logo"
                                                             class="Bucefal logo" />
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding: 30px 0 0;">
-                                                        <a href="https://bucefal.pro/ru">
-                                                            <img src="link.svg" alt="link icon to lead to bucefal.pro">
+                                                    <td class="first-icon">
+                                                        <a href="https://bucefal.pro/ru" target="_blank">
+                                                            <img src="link.svg" class="icon"
+                                                                alt="link icon to lead to bucefal.pro">
                                                             <font>bucefal.pro</font>
                                                         </a>
-
                                                     </td>
-
                                                 </tr>
                                                 <tr>
-
                                                     <td>
-
                                                         <a href="mailto:support@bucefal.pro">
-                                                            <img src="envelope.svg" alt="Envelop icon">
+                                                            <img src="envelope.svg" class="icon" alt="Envelop icon">
                                                             <font>support@bucefal.pro</font>
                                                         </a>
-
                                                     </td>
                                                 </tr>
 
@@ -491,27 +511,7 @@
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td style="padding: 30px 0 0;">
-                                        <a href="https://bucefal.pro/ru">
-                                            <img src="link.svg" alt="link icon to lead to bucefal.pro">
-                                            <font>bucefal.pro</font>
-                                        </a>
 
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>
-
-                                        <a href="mailto:support@bucefal.pro">
-                                            <img src="envelope.svg" alt="Envelop icon">
-                                            <font>support@bucefal.pro</font>
-                                        </a>
-
-                                    </td>
-                                </tr>
                             </table>
                         </td>
                     </tr>
@@ -548,10 +548,8 @@
                                             <table class="content">
                                                 <tr>
                                                     <td align="right">
-                                                        <a href="">
-                                                            <button class="footer-btn">
-                                                                Ви можете відписатися від e-mail розсилки
-                                                            </button>
+                                                        <a href="{{unsubscribe}}" class="footer-btn">
+                                                            Ви можете відписатися від e-mail розсилки
                                                         </a>
                                                     </td>
 

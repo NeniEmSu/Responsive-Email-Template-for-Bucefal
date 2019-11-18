@@ -2,351 +2,14 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <style type="text/css"></style>
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
-            margin: 0;
-            padding: 0 15px;
-            background-image: url('top.png'), url('bottom.png ');
-            background-repeat: no-repeat;
-            background-position: right 30vw top, left 25vw bottom;
-            background-size: 400px, 420px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .container {
-            margin: 0 !important;
-            background-color: #FFF;
-        }
-
-        .wrapper {
-            width: 100%;
-            table-layout: fixed;
-        }
-
-        .wrapper-inner {
-            width: 100%;
-            background-color: #fff;
-            max-width: 670px;
-            margin: 0 auto;
-        }
-
-        table {
-            border-spacing: 0;
-            font-family: 'Roboto', sans-serif;
-            color: rgba(0, 0, 0, 1);
-        }
-
-        a {
-            margin: 30px 0;
-            text-decoration: none;
-            color: rgba(0, 0, 0, 1);
-            text-align: center;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            justify-content: center;
-            justify-self: center;
-        }
-
-        a img {
-            margin: 0 20px 0 0;
-            width: 20px !important;
-        }
-
-        font {
-            position: absolute;
-            margin-top: 1px;
-        }
-
-        td {
-            padding: 0;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        li {
-            margin: 0 0 20px 0;
-        }
-
-        hr {
-            margin: 0;
-            border: #e5e5e5 2.5px solid;
-        }
-
-        .main-table-first {
-            width: 100%;
-            max-width: 610px;
-            margin: 0 auto;
-            border-radius: 6px;
-            position: relative;
-        }
-
-        .gradient {
-            position: absolute;
-            top: 0;
-            z-index: -1;
-            height: 200px;
-            max-width: 600px;
-            width: 100%;
-            background: linear-gradient(270deg, #FFFFFF 13%, rgba(227, 227, 227, 0.510417) 48.95%, rgba(227, 227, 227, 0.510417) 48.96%, #FFFFFF 82.67%);
-
-        }
-
-        .main-table-footer {
-            width: 100%;
-            max-width: 610px;
-            margin: 0 auto;
-            border-radius: 6px;
-            margin-top: 25px;
-        }
-
-
-        .two-column {
-            text-align: center;
-            font-size: 14px;
-
-        }
-
-        .two-column .section {
-            width: 100%;
-            max-width: 300px;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .two-column .section-footer-left {
-            width: 100%;
-            max-width: 400px;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .two-column .section-footer-right {
-            width: 100%;
-            max-width: 200px;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .two-column .content {
-            font-size: 14px;
-            line-height: 20px;
-            text-align: left;
-        }
-
-        .footer-two-column {
-            padding: 0 0 30px 0;
-        }
-
-
-        .content {
-            width: 100%;
-
-        }
-
-        .center {
-            display: table;
-            margin: 0 auto;
-        }
-
-        img {
-            border: 0;
-        }
-
-        img.logo {
-            margin: 20% 0 20%;
-            float: left;
-            max-width: 255px !important;
-        }
-
-        #callout {
-            float: right;
-            margin: 4% 5% 2% 0;
-            height: auto;
-            overflow: hidden;
-        }
-
-        #callout img {
-            max-width: 40px;
-        }
-
-        .social {
-            list-style-type: none;
-            margin-top: 1%;
-            padding: 0;
-        }
-
-        .social p {
-            display: inline-block;
-            margin: 0 auto;
-        }
-
-        .social p {
-            display: inline-block;
-            margin: 0 auto;
-        }
-
-        .social p img {
-            max-width: 40px;
-            margin-bottom: 0;
-            margin: 0 0 0 30px;
-            padding-bottom: 0;
-        }
-
-        .contact {
-            list-style-type: none;
-            margin-top: 1%;
-            padding: 0;
-        }
-
-        .contact p {
-            display: flex;
-        }
-
-        .contact p img {
-            max-width: 15px;
-            margin: 0 5px 0 0;
-            padding-bottom: 0;
-        }
-
-        .main-table {
-            width: 100%;
-            max-width: 610px;
-            margin: 50px auto 0;
-            background-color: #FFF;
-            border-radius: 6px;
-        }
-
-        .one-column .inner-td {
-            font-size: 14px;
-            line-height: 20px;
-            text-align: left;
-        }
-
-        .inner-td {
-            margin: auto 0;
-            padding: 0;
-        }
-
-        .two-column img.logo {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-        }
-
-        .two-column img.solar {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            margin-bottom: -1.6rem;
-        }
-
-        .two-column .text {
-            padding: 10px 0;
-        }
-
-        .inner-bottom {
-            padding: 2px;
-        }
-
-        .h1 {
-            text-align: center !important;
-            font-size: 24px !important;
-            font-weight: 500;
-            line-height: 45px;
-            margin: 12px 0 20px 0;
-            color: #239A0F;
-        }
-
-        .inner-bottom p {
-            text-align: center;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.5rem;
-
-        }
-
-        .body-text {
-            min-height: 380px;
-        }
-
-        .footer-text {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
-
-            color: #239A0F;
-        }
-
-        .footer-btn {
-            width: 193px;
-            height: 52px;
-            padding: 9px 17px;
-            margin: auto;
-
-            background: #E3E3E3;
-            border-radius: 10px;
-            text-align: center;
-            outline: none;
-            border: 0;
-            cursor: pointer;
-
-
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            text-align: center;
-
-            color: #000000;
-        }
-
-
-        @media screen and (max-width: 400px) {
-
-            .h1 {
-                font-size: 22px;
-            }
-
-            .two-column .column {
-                max-width: 100% !important;
-            }
-
-            .two-column img {
-                width: 100% !important;
-            }
-
-            .contact p {
-                display: inline-block;
-            }
-
-
-        }
-
-        @media screen and (min-width: 401px) and (max-width: 400px) {
-
-            .two-column .column {
-                max-width: 50% !important;
-            }
-        }
-
         @media screen and (max-width:768px) {
             body {
                 margin: 0;
@@ -379,6 +42,10 @@
                 max-width: 26px !important;
             }
 
+            .icon {
+                max-width: 26px !important;
+            }
+
             .two-column .section {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -402,42 +69,103 @@
                 padding-top: 0px !important;
             }
         }
+
+        @media screen and (min-width: 401px) and (max-width: 400px) {
+            .two-column .column {
+                max-width: 50% !important;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .h1 {
+                font-size: 22px;
+            }
+
+            .first-icon {
+                padding: 5px 0px 0 !important;
+                margin: auto;
+            }
+
+            .two-column .column {
+                max-width: 100% !important;
+            }
+
+            .two-column img {
+                width: 100% !important;
+            }
+
+            .contact p {
+                display: inline-block;
+            }
+
+            .footer-text {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 
 <body
-    style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:15px;padding-left:15px;background-image:url('top.png'), url('bottom.png ');background-repeat:no-repeat;background-position:right 30vw top, left 25vw bottom;background-size:400px, 420px;font-family:'Roboto', sans-serif;">
+    style="margin: 0; padding: 0 15px; background-image: url('top.png'), url('bottom.png '); background-repeat: no-repeat; background-position: right 30vw top, left 25vw bottom; background-size: 400px, 420px; font-family: 'Roboto', sans-serif;">
     <table cellpadding="0" cellspacing="0" border="0" class="container"
-        style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;background-color:#FFF;">
+        style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); background-color: #FFF; margin: 0;"
+        bgcolor="#FFF">
         <table class="wrapper"
-            style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;table-layout:fixed;">
+            style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; table-layout: fixed;"
+            width="100%">
             <table cellpadding="0" cellspacing="0" border="0" class="wrapper-inner"
-                style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;background-color:#fff;max-width:670px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;">
+                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; background-color: #fff; max-width: 670px; margin: 0 auto;"
+                width="100%" bgcolor="#fff">
                 <table class="main-table-first"
-                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;max-width:610px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-radius:6px;position:relative;">
+                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; max-width: 610px; margin: 0 auto; border-radius: 6px; position: relative;"
+                    width="100%">
 
                     <tr>
 
-                        <td class="two-column"
-                            style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:14px;">
+                        <td class="two-column" style="padding: 0; text-align: center; font-size: 14px;" align="center">
                             <div class="gradient"
-                                style="position:absolute;top:0;z-index:-1;height:200px;max-width:600px;width:100%;background-color:#FFFFFF;background-image:none;background-repeat:repeat;background-position:270deg,  13%,;background-attachment:scroll;">
+                                style="position: absolute; top: 0; z-index: -1; height: 200px; max-width: 600px; width: 100%; background: linear-gradient(270deg, #FFFFFF 13%, rgba(227, 227, 227, 0.510417) 48.95%, rgba(227, 227, 227, 0.510417) 48.96%, #FFFFFF 82.67%);">
                             </div>
                             <div class="section"
-                                style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                                style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);">
+                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1);">
                                     <tr>
-                                        <td class="inner-td"
-                                            style="margin-top:auto;margin-bottom:auto;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                        <td class="inner-td" style="margin: auto 0; padding: 0;">
                                             <table class="content"
-                                                style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;font-size:14px;line-height:20px;text-align:left;">
-                                                <tr class="has-gradient">
-                                                    <td align="center"
-                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-                                                        <img src="bucefal3.png" alt="bucefal" title="Bucefal"
+                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; font-size: 14px; line-height: 20px; text-align: left;"
+                                                width="100%" align="left">
+                                                <tr>
+                                                    <td align="center" style="padding: 0;">
+                                                        <img src="bucefal3.png" alt="Bucefal Logo " title="Bucefal Logo"
                                                             class="Bucefal logo"
-                                                            style="border-width:0;margin-top:20%;margin-bottom:20%;margin-right:0;margin-left:0;float:left;width:100%;max-width:255px !important;height:auto;" />
+                                                            style="border: 0; margin: 20% 0 20%; float: left; width: 100%; height: auto; max-width: 255px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-icon" style="padding: 0;">
+                                                        <a href="https://bucefal.pro/ru" target="_blank"
+                                                            style="margin: 30px 0; text-decoration: none; color: rgba(0, 0, 0, 1); text-align: center; font-style: normal; font-weight: 500; font-size: 14px; justify-content: center; justify-self: center;">
+                                                            <img src="link.svg" class="icon"
+                                                                alt="link icon to lead to bucefal.pro"
+                                                                style="border: 0; margin: 0 20px 0 0; width: 20px;"
+                                                                width="20">
+                                                            <font style="position: absolute; margin-top: 1px;">
+                                                                bucefal.pro</font>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 0;">
+                                                        <a href="mailto:support@bucefal.pro"
+                                                            style="margin: 30px 0; text-decoration: none; color: rgba(0, 0, 0, 1); text-align: center; font-style: normal; font-weight: 500; font-size: 14px; justify-content: center; justify-self: center;">
+                                                            <img src="envelope.svg" class="icon" alt="Envelop icon"
+                                                                style="border: 0; margin: 0 20px 0 0; width: 20px;"
+                                                                width="20">
+                                                            <font style="position: absolute; margin-top: 1px;">
+                                                                support@bucefal.pro</font>
+                                                        </a>
                                                     </td>
                                                 </tr>
 
@@ -447,20 +175,19 @@
                                 </table>
                             </div>
                             <div class="section"
-                                style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                                style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);">
+                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1);">
                                     <tr class="">
-                                        <td class="inner-td"
-                                            style="margin-top:auto;margin-bottom:auto;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                        <td class="inner-td" style="margin: auto 0; padding: 0;">
                                             <table class="content"
-                                                style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;font-size:14px;line-height:20px;text-align:left;">
+                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; font-size: 14px; line-height: 20px; text-align: left;"
+                                                width="100%" align="left">
                                                 <tr>
-                                                    <td align="center"
-                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-                                                        <img class="solar" src="404.png" title="Bucefal process"
-                                                            alt="Bucefal process"
-                                                            style="padding-top:0;border-width:0;width:100%;max-width:800px;height:auto;margin-bottom:-1.6rem;" />
+                                                    <td align="center" style="padding: 0;">
+                                                        <img class="solar"
+                                                            style="border: 0; width: 100%; max-width: 800px; height: auto; margin-bottom: -1.6rem; padding-top: 0;"
+                                                            src="404.png" title="Bucefal process" alt="Bucefal process">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -472,19 +199,19 @@
                     </tr>
                 </table>
                 <table class="main-table"
-                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;max-width:610px;margin-top:50px;margin-bottom:0;margin-right:auto;margin-left:auto;background-color:#FFF;border-radius:6px;">
+                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; max-width: 610px; margin: 50px auto 0; background-color: #FFF; border-radius: 6px;"
+                    width="100%" bgcolor="#FFF">
                     <tr>
-                        <td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                        <td class="one-column" style="padding: 0;">
                             <table width="100%"
-                                style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);">
+                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1);">
                                 <tr>
-                                    <td class="inner-bottom"
-                                        style="padding-top:2px;padding-bottom:2px;padding-right:2px;padding-left:2px;">
+                                    <td class="inner-bottom" style="padding: 2px;">
                                         <p class="h1"
-                                            style="margin-top:12px;margin-bottom:20px;margin-right:0;margin-left:0;color:#239A0F;text-align:center !important;font-style:normal;font-weight:400;font-size:24px !important;line-height:1.5rem;">
+                                            style="margin: 12px 0 20px 0; color: #239A0F; font-style: normal; font-weight: 400; line-height: 1.5rem; text-align: center; font-size: 24px;">
                                             Дорогі наші Клієнти&excl;</p>
                                         <p class="body-text"
-                                            style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;min-height:380px;text-align:center;font-style:normal;font-weight:400;font-size:14px;line-height:1.5rem;">
+                                            style="margin: 0; min-height: 380px; text-align: center; font-style: normal; font-weight: 400; font-size: 14px; line-height: 1.5rem;">
                                             Компанія «LevelSun» &ndash; офіційний дилер кращих
                                             торгівельних марок по
                                             виробництву комплектуючих для сонячних електростанцій. Ми встановлюємо
@@ -494,34 +221,11 @@
                                             кошти&comma; а головне заробляти на продажінадлишкової енергії &ndash; Вам
                                             необхідно
                                             звернутись саме до нас&excl;
+                                        </p>
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td style="padding-top:30px;padding-bottom:0;padding-right:0;padding-left:0;">
-                                        <a href="https://bucefal.pro/ru"
-                                            style="margin-top:30px;margin-bottom:30px;margin-right:0;margin-left:0;text-decoration:none;color:rgba(0, 0, 0, 1);text-align:center;font-style:normal;font-weight:500;font-size:14px;justify-content:center;justify-self:center;">
-                                            <img src="link.svg" alt="link icon to lead to bucefal.pro"
-                                                style="border-width:0;margin-top:0;margin-bottom:0;margin-right:20px;margin-left:0;width:20px !important;">
-                                            <font style="position:absolute;margin-top:1px;">bucefal.pro</font>
-                                        </a>
 
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-
-                                        <a href="mailto:support@bucefal.pro"
-                                            style="margin-top:30px;margin-bottom:30px;margin-right:0;margin-left:0;text-decoration:none;color:rgba(0, 0, 0, 1);text-align:center;font-style:normal;font-weight:500;font-size:14px;justify-content:center;justify-self:center;">
-                                            <img src="envelope.svg" alt="Envelop icon"
-                                                style="border-width:0;margin-top:0;margin-bottom:0;margin-right:20px;margin-left:0;width:20px !important;">
-                                            <font style="position:absolute;margin-top:1px;">support@bucefal.pro</font>
-                                        </a>
-
-                                    </td>
-                                </tr>
                             </table>
                         </td>
                     </tr>
@@ -529,27 +233,26 @@
 
 
                 <table class="main-table-footer"
-                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;max-width:610px;margin-top:25px;margin-bottom:0;margin-right:auto;margin-left:auto;border-radius:6px;">
+                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; max-width: 610px; margin: 0 auto; border-radius: 6px; margin-top: 25px;"
+                    width="100%">
 
                     <tr>
                         <td class="two-column footer-two-column"
-                            style="text-align:center;font-size:14px;padding-top:0;padding-bottom:30px;padding-right:0;padding-left:0;">
-                            <hr
-                                style="margin-bottom:30px;margin-top:0;margin-right:0;margin-left:0;border-width:2.5px;border-style:solid;border-color:#e5e5e5;">
+                            style="text-align: center; font-size: 14px; padding: 0 0 30px 0;" align="center">
+                            <hr style="margin: 0; border: #e5e5e5 2.5px solid; margin-bottom: 30px;">
                             <div class="section-footer-left"
-                                style="width:100%;max-width:400px;display:inline-block;vertical-align:top;">
+                                style="width: 100%; max-width: 400px; display: inline-block; vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);">
+                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1);">
                                     <tr>
-                                        <td class="inner-td"
-                                            style="margin-top:auto;margin-bottom:auto;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                        <td class="inner-td" style="margin: auto 0; padding: 0;">
                                             <table class="content"
-                                                style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;font-size:14px;line-height:20px;text-align:left;">
+                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; font-size: 14px; line-height: 20px; text-align: left;"
+                                                width="100%" align="left">
                                                 <tr>
-                                                    <td align="left"
-                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                                    <td align="left" style="padding: 0;">
                                                         <p class="footer-text"
-                                                            style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-style:normal;font-weight:500;font-size:14px;line-height:17px;color:#239A0F;">
+                                                            style="margin: 0; font-style: normal; font-weight: 500; font-size: 14px; line-height: 17px; color: #239A0F;">
                                                             Гарної форми та продуктивних тренувань
                                                             Ваш магазин спортивної фармакології Bucefal
                                                         </p>
@@ -561,23 +264,19 @@
                                 </table>
                             </div>
                             <div class="section-footer-right"
-                                style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+                                style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);">
+                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1);">
                                     <tr>
-                                        <td class="inner-td"
-                                            style="margin-top:auto;margin-bottom:auto;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                        <td class="inner-td" style="margin: auto 0; padding: 0;">
                                             <table class="content"
-                                                style="border-spacing:0;font-family:'Roboto', sans-serif;color:rgba(0, 0, 0, 1);width:100%;font-size:14px;line-height:20px;text-align:left;">
+                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 1); width: 100%; font-size: 14px; line-height: 20px; text-align: left;"
+                                                width="100%" align="left">
                                                 <tr>
-                                                    <td align="right"
-                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-                                                        <a href=""
-                                                            style="margin-top:30px;margin-bottom:30px;margin-right:0;margin-left:0;text-decoration:none;color:rgba(0, 0, 0, 1);text-align:center;font-style:normal;font-weight:500;font-size:14px;justify-content:center;justify-self:center;">
-                                                            <button class="footer-btn"
-                                                                style="width:193px;height:52px;padding-top:9px;padding-bottom:9px;padding-right:17px;padding-left:17px;margin-top:auto;margin-bottom:auto;margin-right:auto;margin-left:auto;background-color:#E3E3E3;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;border-radius:10px;text-align:center;outline-style:none;border-width:0;cursor:pointer;font-style:normal;font-weight:400;font-size:14px;line-height:17px;color:#000000;">
-                                                                Ви можете відписатися від e-mail розсилки
-                                                            </button>
+                                                    <td align="right" style="padding: 0;">
+                                                        <a href="{{unsubscribe}}" class="footer-btn"
+                                                            style="text-decoration: none; justify-content: center; justify-self: center; display: inline-flex; padding: 9px 17px; margin: auto; background: #E3E3E3; border-radius: 10px; text-align: center; outline: none; border: 0; cursor: pointer; font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px; text-align: center; color: #000000; transition: 500ms all ease-in; -webkit-transition: 500ms all ease-in; -moz-transition: 500ms all ease-in; -ms-transition: 500ms all ease-in; -o-transition: 500ms all ease-in;">
+                                                            Ви можете відписатися від e-mail розсилки
                                                         </a>
                                                     </td>
 
